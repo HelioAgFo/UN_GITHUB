@@ -38,17 +38,16 @@
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Update1 = New Microsoft.Dynamics.SL.Controls.DSLUpdate()
-        Me.SAFHelpProvider = New System.Windows.Forms.HelpProvider
+        Me.SAFHelpProvider = New System.Windows.Forms.HelpProvider()
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
         '
         'Update1
         '
         Me.Update1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Update1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Update1.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Update1.Levels = ""
+        Me.Update1.Image = CType(resources.GetObject("Update1.Image"), System.Drawing.Image)
         Me.Update1.Location = New System.Drawing.Point(501, 12)
         Me.Update1.Name = "Update1"
         Me.Update1.Size = New System.Drawing.Size(25, 25)
@@ -57,10 +56,9 @@
         Me.Update1.TabStop = False
         Me.Update1.Visible = False
         '
-        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(538, 381)
@@ -70,10 +68,9 @@
         Me.Location = New System.Drawing.Point(4, 23)
         Me.Name = "Form1"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Text = "Form1"
+        Me.Text = "GITHUB"
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents SAFHelpProvider As System.Windows.Forms.HelpProvider
