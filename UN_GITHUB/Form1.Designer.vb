@@ -39,6 +39,7 @@
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Update1 = New Microsoft.Dynamics.SL.Controls.DSLUpdate()
         Me.SAFHelpProvider = New System.Windows.Forms.HelpProvider()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,6 +49,7 @@
         Me.Update1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Update1.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Update1.Image = CType(resources.GetObject("Update1.Image"), System.Drawing.Image)
+        Me.Update1.Levels = Nothing
         Me.Update1.Location = New System.Drawing.Point(501, 12)
         Me.Update1.Name = "Update1"
         Me.Update1.Size = New System.Drawing.Size(25, 25)
@@ -56,12 +58,22 @@
         Me.Update1.TabStop = False
         Me.Update1.Visible = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(513, 357)
+        Me.GroupBox1.TabIndex = 1
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "TEST"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(538, 381)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Update1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -74,5 +86,6 @@
 
     End Sub
     Friend WithEvents SAFHelpProvider As System.Windows.Forms.HelpProvider
+    Friend WithEvents GroupBox1 As GroupBox
 #End Region
 End Class
