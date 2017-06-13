@@ -40,7 +40,9 @@
         Me.Update1 = New Microsoft.Dynamics.SL.Controls.DSLUpdate()
         Me.SAFHelpProvider = New System.Windows.Forms.HelpProvider()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Update1
@@ -60,12 +62,22 @@
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(513, 357)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "TEST"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(44, 42)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
         '
         'Form1
         '
@@ -82,10 +94,13 @@
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "GITHUB"
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents SAFHelpProvider As System.Windows.Forms.HelpProvider
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label1 As Label
 #End Region
 End Class
